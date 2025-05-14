@@ -12,16 +12,18 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
       
-    - name: Setup SSH
-      uses: webfactory/ssh-agent@v0.7.0
+    - name: Install SSH key
+      uses: shimataro/ssh-key-action@v2
       with:
-        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
+        if_key_exists: replace
         
-    - name: Add host key
+    - name: Adding known hosts
       run: |
         mkdir -p ~/.ssh
         ssh-keyscan -H 159.89.36.15 >> ~/.ssh/known_hosts
       
     - name: Deploy to server
       run: |
-        ssh root@159.89.36.15 "cd /var/www/dionattan.adv.br/blog && sudo chown -R www-data:www-data . && sudo -u www-data git pull origin main" 
+        ssh -o StrictHostKeyChecking=no root@159.89.36.15 "cd /var/www/dionattan.adv.br/blog && git config --global --add safe.directory /var/www/dionattan.adv.br/blog && git pull origin main && chown -R www-data:www-data ." 
