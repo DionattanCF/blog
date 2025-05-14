@@ -1,4 +1,4 @@
-# Blog Dionattan Advogados
+# Blog Dionattan Coutrin Figueiredo
 
 Este é um blog simples em HTML/CSS para o site dionattan.adv.br, focado em publicação de artigos sobre diversos temas jurídicos.
 
