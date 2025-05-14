@@ -12,16 +12,11 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
       
-    - name: Install SSH key
-      uses: shimataro/ssh-key-action@v2
-      with:
-        key: ${{ secrets.SSH_PRIVATE_KEY }}
-        known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
-        if_key_exists: replace
-        
-    - name: Adding known hosts
+    - name: Set up SSH
       run: |
         mkdir -p ~/.ssh
+        echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
         ssh-keyscan -H 159.89.36.15 >> ~/.ssh/known_hosts
       
     - name: Deploy to server
