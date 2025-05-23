@@ -5,93 +5,198 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog | Dionattan Coutrin Figueiredo</title>
     <link rel="stylesheet" href="/blog/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Blog Dionattan Coutrin Figueiredo</h1>
-            <nav>
-                <ul>
-                    <li><a href="/blog/index.html">Início</a></li>
-                    <li><a href="/blog/artigos.html">Artigos</a></li>
-                    <li><a href="https://dionattan.adv.br">Site Principal</a></li>
-                </ul>
-            </nav>
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Dionattan Coutrin Figueiredo</h1>
+                    <span class="tagline">Advocacia & Reflexões</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="/blog/index.html" class="active">Início</a></li>
+                        <li><a href="/blog/artigos.html">Artigos</a></li>
+                        <li><a href="https://dionattan.adv.br">Site Principal</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Explorando o Direito e a Filosofia na Era Digital</h2>
+                <p>Reflexões jurídicas, análises filosóficas e insights sobre tecnologia, ética e sociedade contemporânea.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Artigos Publicados</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Áreas de Expertise</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2025</span>
+                        <span class="stat-label">Ano de Fundação</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-showcase">
+        <div class="container">
+            <h2>Áreas de Conhecimento</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Direito Digital</h3>
+                    <p>Proteção de dados, LGPD, crimes cibernéticos e regulamentação tecnológica.</p>
+                    <a href="/blog/categorias/direito-digital.html" class="category-link">Explorar <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-vote-yea"></i>
+                    </div>
+                    <h3>Direito Eleitoral</h3>
+                    <p>Legislação eleitoral, campanhas políticas e democracia digital.</p>
+                    <a href="/blog/categorias/direito-eleitoral.html" class="category-link">Explorar <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>Direito Público</h3>
+                    <p>Administração pública, constitucional e políticas governamentais.</p>
+                    <a href="/blog/categorias/direito-publico.html" class="category-link">Explorar <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Filosofia</h3>
+                    <p>Ética, filosofia do direito, reflexões sobre tecnologia e sociedade.</p>
+                    <a href="/blog/categorias/filosofia.html" class="category-link">Explorar <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <main class="container">
-        <section class="featured-posts">
-            <h2>Artigos em Destaque</h2>
-            <div class="posts-grid">
-                <article class="post-card">
-                    <img src="/blog/img/ia-judiciario.jpg" alt="Inteligência Artificial no Judiciário">
-                    <div class="post-content">
+        <!-- Featured Articles -->
+        <section class="featured-section">
+            <div class="section-header">
+                <h2><i class="fas fa-star"></i> Artigos em Destaque</h2>
+                <p>Conteúdos selecionados sobre temas relevantes e atuais</p>
+            </div>
+            <div class="featured-grid">
+                <article class="featured-card main-featured">
+                    <div class="featured-image">
+                        <img src="/blog/img/ia-judiciario.jpg" alt="Inteligência Artificial no Judiciário">
+                        <div class="featured-badge">Destaque Principal</div>
+                    </div>
+                    <div class="featured-content">
+                        <div class="featured-meta">
+                            <span class="category-tag digital">Direito Digital</span>
+                            <span class="date">21/05/2025</span>
+                        </div>
                         <h3><a href="/blog/artigos/ia-no-judiciario.html">Inteligência Artificial no Judiciário: Desafios e Responsabilidades</a></h3>
-                        <p class="post-meta">Publicado em: 21/05/2025</p>
-                        <p class="post-excerpt">Uma análise sobre os desafios da aplicação de IA no Poder Judiciário e questões de transparência, responsabilização e proteção de dados.</p>
-                        <a href="/blog/artigos/ia-no-judiciario.html" class="read-more">Ler mais</a>
+                        <p>Uma análise profunda sobre os desafios da aplicação de IA no Poder Judiciário, abordando questões de transparência, responsabilização e proteção de dados.</p>
+                        <a href="/blog/artigos/ia-no-judiciario.html" class="featured-link">Ler artigo completo <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
                 
-                <article class="post-card">
-                    <img src="/blog/img/ia-dados-sensiveis.jpg" alt="Inteligência Artificial e Dados Sensíveis">
-                    <div class="post-content">
-                        <h3><a href="/blog/artigos/dados-sensiveis-ia.html">O Uso de Dados Sensíveis em Inteligência Artificial: Riscos e Medidas de Proteção</a></h3>
-                        <p class="post-meta">Publicado em: 21/05/2025</p>
-                        <p class="post-excerpt">Entenda os riscos e medidas de proteção necessárias ao utilizar dados sensíveis em sistemas de IA de acordo com a LGPD.</p>
-                        <a href="/blog/artigos/dados-sensiveis-ia.html" class="read-more">Ler mais</a>
+                <article class="featured-card">
+                    <div class="featured-image">
+                        <img src="/blog/img/ia-dados-sensiveis.jpg" alt="Inteligência Artificial e Dados Sensíveis">
+                    </div>
+                    <div class="featured-content">
+                        <div class="featured-meta">
+                            <span class="category-tag digital">Direito Digital</span>
+                            <span class="date">21/05/2025</span>
+                        </div>
+                        <h3><a href="/blog/artigos/dados-sensiveis-ia.html">O Uso de Dados Sensíveis em IA</a></h3>
+                        <p>Riscos e medidas de proteção necessárias ao utilizar dados sensíveis em sistemas de IA.</p>
+                        <a href="/blog/artigos/dados-sensiveis-ia.html" class="featured-link">Ler mais <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
             </div>
         </section>
 
-        <section class="recent-posts">
-            <h2>Artigos Recentes</h2>
-            <div class="posts-list">
-                <article class="post-item">
+        <!-- Recent Articles -->
+        <section class="recent-section">
+            <div class="section-header">
+                <h2><i class="fas fa-clock"></i> Artigos Recentes</h2>
+                <a href="/blog/artigos.html" class="view-all">Ver todos os artigos <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="recent-grid">
+                <article class="recent-card">
+                    <div class="recent-meta">
+                        <span class="category-tag digital">Direito Digital</span>
+                        <span class="date">21/05/2025</span>
+                    </div>
                     <h3><a href="/blog/artigos/ia-no-judiciario.html">Inteligência Artificial no Judiciário: Desafios e Responsabilidades</a></h3>
-                    <p class="post-meta">Publicado em: 21/05/2025</p>
-                    <p class="post-excerpt">Uma análise sobre os desafios da aplicação de IA no Poder Judiciário e questões de transparência, responsabilização e proteção de dados.</p>
+                    <p>Uma análise sobre os desafios da aplicação de IA no Poder Judiciário e questões de transparência, responsabilização e proteção de dados.</p>
                     <a href="/blog/artigos/ia-no-judiciario.html" class="read-more">Ler mais</a>
                 </article>
                 
-                <article class="post-item">
+                <article class="recent-card">
+                    <div class="recent-meta">
+                        <span class="category-tag digital">Direito Digital</span>
+                        <span class="date">14/05/2025</span>
+                    </div>
                     <h3><a href="/blog/artigos/responsabilidade-erros-ia.html">Responsabilidade: quem responde por erros da IA?</a></h3>
-                    <p class="post-meta">Publicado em: 14/05/2025</p>
-                    <p class="post-excerpt">Advogado sofre advertência após IA "inventar" 43 julgados inexistentes em peça processual. Entenda as implicações éticas.</p>
+                    <p>Advogado sofre advertência após IA "inventar" 43 julgados inexistentes em peça processual. Entenda as implicações éticas.</p>
                     <a href="/blog/artigos/responsabilidade-erros-ia.html" class="read-more">Ler mais</a>
                 </article>
                 
-                <article class="post-item">
-                    <h3><a href="/blog/artigos/dados-sensiveis-ia.html">O Uso de Dados Sensíveis em Inteligência Artificial: Riscos e Medidas de Proteção</a></h3>
-                    <p class="post-meta">Publicado em: 21/05/2025</p>
-                    <p class="post-excerpt">Entenda os riscos e medidas de proteção necessárias ao utilizar dados sensíveis em sistemas de IA de acordo com a LGPD.</p>
+                <article class="recent-card">
+                    <div class="recent-meta">
+                        <span class="category-tag digital">Direito Digital</span>
+                        <span class="date">21/05/2025</span>
+                    </div>
+                    <h3><a href="/blog/artigos/dados-sensiveis-ia.html">O Uso de Dados Sensíveis em Inteligência Artificial</a></h3>
+                    <p>Entenda os riscos e medidas de proteção necessárias ao utilizar dados sensíveis em sistemas de IA de acordo com a LGPD.</p>
                     <a href="/blog/artigos/dados-sensiveis-ia.html" class="read-more">Ler mais</a>
                 </article>
             </div>
         </section>
     </main>
 
-    <aside class="sidebar container">
-        <div class="widget categories">
-            <h3>Categorias</h3>
-            <ul>
-                <li><a href="/blog/categorias/direito-digital.html">Direito Digital</a></li>
-                <li><a href="/blog/categorias/direito-eleitoral.html">Direito Eleitoral</a></li>
-                <li><a href="/blog/categorias/direito-publico.html">Direito Público</a></li>
-            </ul>
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Mantenha-se Atualizado</h2>
+                    <p>Receba nossos artigos mais recentes sobre direito, tecnologia e filosofia diretamente no seu email.</p>
+                </div>
+                <form action="#" method="POST" class="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Seu melhor email" required>
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                            Inscrever-se
+                        </button>
+                    </div>
+                    <p class="newsletter-privacy">Respeitamos sua privacidade. Sem spam, apenas conteúdo de qualidade.</p>
+                </form>
+            </div>
         </div>
-        
-        <div class="widget newsletter">
-            <h3>Receba Nossos Artigos</h3>
-            <p>Inscreva-se para receber novidades e artigos jurídicos diretamente no seu email.</p>
-            <form action="#" method="POST" class="newsletter-form">
-                <input type="email" name="email" placeholder="Seu melhor email" required>
-                <button type="submit">Inscrever-se</button>
-            </form>
-        </div>
-    </aside>
+    </section>
 
     <footer>
         <div class="container">
@@ -99,6 +204,12 @@
                 <div class="footer-logo">
                     <h2>Dionattan Advogados</h2>
                     <p>Assessoria jurídica especializada e comprometida com seus direitos.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
                 </div>
                 <div class="footer-links">
                     <h3>Links Rápidos</h3>
@@ -111,13 +222,9 @@
                 </div>
                 <div class="footer-contact">
                     <h3>Contato</h3>
-                    <p>Email: dionattan@dionattan.adv.br</p>
-                    <p>Telefone: (62) 98340-4044</p>
-                    <div class="social-links">
-                        <a href="#" class="social-icon">Facebook</a>
-                        <a href="#" class="social-icon">Instagram</a>
-                        <a href="#" class="social-icon">LinkedIn</a>
-                    </div>
+                    <p><i class="fas fa-envelope"></i> dionattan@dionattan.adv.br</p>
+                    <p><i class="fas fa-phone"></i> (62) 98340-4044</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Goiânia, GO</p>
                 </div>
             </div>
             <div class="copyright">
